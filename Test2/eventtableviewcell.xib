@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell_event" rowHeight="210" id="Uvt-Ep-RMy" customClass="EvenTableViewCell" customModule="Test2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="539" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Uvt-Ep-RMy" id="4JK-jY-wSo">
+                <rect key="frame" x="0.0" y="0.0" width="539" height="209.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Auk-ef-Xst">
+                        <rect key="frame" x="20" y="11" width="499" height="188"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RUPP" translatesAutoresizingMaskIntoConstraints="NO" id="8kP-yG-mAb">
+                                <rect key="frame" x="0.0" y="0.0" width="499" height="188"/>
+                            </imageView>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Kd-PW-pQB">
+                                <rect key="frame" x="0.0" y="121" width="499" height="67"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CKCC and RUPP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQ0-dP-Dfi">
+                                        <rect key="frame" x="185.5" y="23" width="127" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="QQ0-dP-Dfi" firstAttribute="centerY" secondItem="1Kd-PW-pQB" secondAttribute="centerY" id="9hD-Ei-UUK"/>
+                                    <constraint firstAttribute="height" constant="67" id="Xy9-ub-bAT"/>
+                                    <constraint firstItem="QQ0-dP-Dfi" firstAttribute="centerX" secondItem="1Kd-PW-pQB" secondAttribute="centerX" id="ctc-7V-juE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8kP-yG-mAb" firstAttribute="leading" secondItem="Auk-ef-Xst" secondAttribute="leading" id="9q4-e1-Bwu"/>
+                            <constraint firstAttribute="trailing" secondItem="8kP-yG-mAb" secondAttribute="trailing" id="HVS-5B-OyY"/>
+                            <constraint firstAttribute="bottom" secondItem="1Kd-PW-pQB" secondAttribute="bottom" id="Tjs-z7-SHI"/>
+                            <constraint firstAttribute="trailing" secondItem="1Kd-PW-pQB" secondAttribute="trailing" id="aay-Vo-AyZ"/>
+                            <constraint firstItem="1Kd-PW-pQB" firstAttribute="leading" secondItem="Auk-ef-Xst" secondAttribute="leading" id="bFa-Td-Qa9"/>
+                            <constraint firstItem="8kP-yG-mAb" firstAttribute="top" secondItem="Auk-ef-Xst" secondAttribute="top" id="ve1-n9-CSd"/>
+                            <constraint firstAttribute="bottom" secondItem="8kP-yG-mAb" secondAttribute="bottom" id="zGc-Uq-U2B"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Auk-ef-Xst" firstAttribute="top" secondItem="4JK-jY-wSo" secondAttribute="topMargin" id="D2d-kD-h9Q"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Auk-ef-Xst" secondAttribute="trailing" id="Zqj-Ra-8E0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Auk-ef-Xst" secondAttribute="bottom" id="fNX-dG-wOh"/>
+                    <constraint firstItem="Auk-ef-Xst" firstAttribute="leading" secondItem="4JK-jY-wSo" secondAttribute="leadingMargin" id="mvy-Ru-k8e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgtableviewcell" destination="8kP-yG-mAb" id="upl-0x-sEa"/>
+                <outlet property="lableviewcell" destination="QQ0-dP-Dfi" id="vzM-yi-bYS"/>
+                <outlet property="viewtablecell" destination="1Kd-PW-pQB" id="0Mf-6I-4Nc"/>
+            </connections>
+            <point key="canvasLocation" x="30.5" y="-183"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="RUPP" width="960" height="307"/>
+    </resources>
+</document>
